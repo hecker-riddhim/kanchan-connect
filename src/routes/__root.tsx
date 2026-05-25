@@ -10,6 +10,7 @@ import {
 import { Toaster } from "@/components/ui/sonner";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 
 import appCss from "../styles.css?url";
 
@@ -17,12 +18,12 @@ function NotFoundComponent() {
   return (
     <div className="flex min-h-[60vh] items-center justify-center px-4">
       <div className="max-w-md text-center">
-        <p className="text-xs uppercase tracking-[0.18em] text-gold">404</p>
-        <h1 className="mt-3 font-display text-3xl text-navy">Page not found</h1>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <p className="text-xs uppercase tracking-[0.16em] text-accent-orange">404</p>
+        <h1 className="mt-3 font-display text-3xl text-brand">Page not found</h1>
+        <p className="mt-2 text-sm text-ink-soft">
           The page you're looking for doesn't exist or has moved.
         </p>
-        <Link to="/" className="mt-6 inline-flex rounded-md bg-navy px-4 py-2 text-sm font-medium text-paper hover:bg-navy-deep">
+        <Link to="/" className="mt-6 inline-flex rounded-full bg-brand px-5 py-2.5 text-sm font-medium text-paper hover:bg-brand-deep">
           Back to home
         </Link>
       </div>
@@ -127,6 +128,7 @@ function RootComponent() {
         </main>
         <SiteFooter />
       </div>
+      <WhatsAppButton />
       <Toaster richColors position="top-right" />
     </QueryClientProvider>
   );
