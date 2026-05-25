@@ -27,7 +27,7 @@ export const Route = createFileRoute("/categories/$category")({
 });
 
 function CategoryPage() {
-  const { category, items } = Route.useLoaderData();
+  const { category, items } = Route.useLoaderData() as { category: Cat; items: Product[] };
   return (
     <>
       <section className="border-b border-border bg-secondary/40">
