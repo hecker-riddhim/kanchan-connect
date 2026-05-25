@@ -7,10 +7,10 @@ import {
 } from "@/components/ui/dialog";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { ProductCard } from "@/components/products/ProductCard";
-import { categories, productBySlug, products } from "@/data/products";
+import { categories, productBySlug, products, type Product } from "@/data/products";
 
 export const Route = createFileRoute("/products/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { product: Product } => {
     const product = productBySlug(params.slug);
     if (!product) throw notFound();
     return { product };
