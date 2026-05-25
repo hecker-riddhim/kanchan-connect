@@ -1,26 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { HomeSections } from "@/components/home/HomeSections";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: HomeSections,
+  head: () => ({
+    meta: [
+      { title: "Kanchan International — Chemical Ingredients, APIs & Intermediates" },
+      { name: "description", content: "Mumbai-based B2B supplier of food-grade chemicals, human and veterinary APIs, and intermediates for manufacturers worldwide." },
+      { property: "og:title", content: "Kanchan International — Chemical Ingredients" },
+      { property: "og:description", content: "GMP-aligned sourcing, full documentation, global shipping." },
+      { property: "og:url", content: "/" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+  }),
 });
-
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
-}
