@@ -51,7 +51,8 @@ function ContactPage() {
             Mumbai 400 002, India
           </ContactCard>
           <ContactCard Icon={Phone} title="Phone">
-            <a href="tel:+917777047722" className="hover:text-brand">+91 7777 047 722</a>
+            <a href="tel:+919869120279" className="block hover:text-brand">+91 98691 20279</a>
+            <a href="tel:+917777047722" className="block hover:text-brand">+91 7777 047 722</a>
           </ContactCard>
           <ContactCard Icon={Mail} title="Email">
             <a href="mailto:info@kanchanin.com" className="hover:text-brand">info@kanchanin.com</a>

@@ -13,6 +13,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 
 import appCss from "../styles.css?url";
+import logoUrl from "@/assets/kanchan-logo.png";
 
 function NotFoundComponent() {
   return (
@@ -64,9 +65,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Kanchan International" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: logoUrl },
+      { name: "twitter:image", content: logoUrl },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: logoUrl },
+      { rel: "apple-touch-icon", href: logoUrl },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -82,18 +87,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: "Kanchan International",
           url: "/",
-          description: "Supplier of food-grade chemicals, APIs and intermediates.",
+          logo: logoUrl,
+          description:
+            "Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs, and pharmaceutical intermediates — with four decades of specialty-chemical expertise.",
           address: {
             "@type": "PostalAddress",
+            streetAddress: "404, Ganjawala Tower, 508, Sane Guruji Marg, Tardeo",
             addressLocality: "Mumbai",
+            postalCode: "400034",
             addressRegion: "MH",
             addressCountry: "IN",
           },
           contactPoint: {
             "@type": "ContactPoint",
-            telephone: "+91-22-2683-1234",
-            email: "sales@kanchanin.com",
+            telephone: "+91-9869120279",
+            email: "info@kanchanin.com",
             contactType: "sales",
+            areaServed: "Worldwide",
           },
         }),
       },

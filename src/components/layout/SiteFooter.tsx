@@ -10,7 +10,7 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border bg-cream">
       <div className="container-page grid gap-12 py-16 md:grid-cols-12">
         <div className="md:col-span-4">
-          <img src={logo} alt="Kanchan International" width={200} height={64} className="h-14 w-auto" />
+          <img src={logo} alt="Kanchan International" width={260} height={88} className="h-20 w-auto" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink-soft">
             A Mumbai-based supplier of food-grade chemicals, human and veterinary active pharmaceutical
             ingredients, and pharmaceutical intermediates — trusted by manufacturers across pharma,
@@ -68,7 +68,10 @@ export function SiteFooter() {
             </li>
             <li className="flex gap-3">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent-orange" />
-              <a href="tel:+917777047722" className="hover:text-brand">+91 7777 047 722</a>
+              <div>
+                <a href="tel:+919869120279" className="block hover:text-brand">+91 98691 20279</a>
+                <a href="tel:+917777047722" className="block hover:text-brand">+91 7777 047 722</a>
+              </div>
             </li>
             <li className="flex gap-3">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent-orange" />

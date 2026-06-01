@@ -39,16 +39,17 @@ export function HomeSections() {
         <div className="container-page relative grid items-center gap-12 py-16 md:grid-cols-[1.05fr_1fr] md:py-24 lg:py-28">
           <div className="fade-up">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-cream px-3 py-1 text-xs uppercase tracking-[0.16em] text-brand">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent-orange" /> Mumbai · Serving 40+ countries
+              <span className="h-1.5 w-1.5 rounded-full bg-accent-orange" /> Mumbai · Four decades in specialty chemicals
             </span>
             <h1 className="mt-6 font-display text-4xl text-balance text-ink md:text-5xl lg:text-[3.5rem]">
-              Trusted chemical solutions for
-              <span className="block text-brand"> pharma, food &amp; veterinary industries.</span>
+              Mineral fortificants, APIs and intermediates —
+              <span className="block text-brand"> trusted by pharma, food &amp; veterinary makers.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
-              We supply high-quality active pharmaceutical ingredients, food-grade chemicals,
-              veterinary APIs and intermediates — backed by global compliance, complete documentation
-              and dependable lead times.
+              Kanchan International supplies high-purity iron, zinc and copper compounds,
+              active pharmaceutical ingredients and contrast-media intermediates — backed by
+              four decades of in-house manufacturing know-how, pharmacopoeial-grade quality
+              control and complete export documentation.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-full bg-brand px-6 text-paper hover:bg-brand-deep">
@@ -247,8 +248,8 @@ export function HomeSections() {
             </div>
             <dl className="grid grid-cols-2 gap-5">
               {[
-                { k: "25+", v: "Years of experience" },
-                { k: "40+", v: "Countries served" },
+                { k: "40+", v: "Years of experience" },
+                { k: "60+", v: "Products in catalogue" },
                 { k: "4", v: "Product categories" },
                 { k: "6", v: "Industries served" },
               ].map((s) => (
