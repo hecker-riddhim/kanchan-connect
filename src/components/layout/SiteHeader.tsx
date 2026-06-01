@@ -38,14 +38,14 @@ export function SiteHeader() {
       >
         Skip to content
       </a>
-      <div className="container-page flex h-16 items-center justify-between md:h-20">
+      <div className="container-page flex h-20 items-center justify-between md:h-28">
         <Link to="/" className="flex items-center gap-3" aria-label="Kanchan International — Home">
           <img
             src={logo}
-            alt="Kanchan International"
-            width={180}
-            height={56}
-            className="h-10 w-auto md:h-12"
+            alt="Kanchan International — Food-grade chemicals, APIs & intermediates"
+            width={280}
+            height={96}
+            className="h-14 w-auto md:h-20"
           />
         </Link>
 
