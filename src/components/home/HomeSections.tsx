@@ -132,12 +132,10 @@ export function HomeSections() {
               reliable and globally accepted chemical products.
             </p>
           </div>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
             {[
               { title: "GMP Aligned", body: "Sourced from WHO/EU-GMP audited manufacturers." },
               { title: "ISO 9001:2015", body: "Quality management system across operations." },
-              { title: "DMF Available", body: "On request for regulated pharma markets." },
-              { title: "SDS / GHS Compliant", body: "Multi-language safety documentation." },
               { title: "Low Heavy Metals", body: "Validated impurity profiles per batch." },
             ].map((c) => (
               <div key={c.title} className="rounded-xl border border-border bg-paper p-6 text-center transition hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-[var(--shadow-soft)]">
