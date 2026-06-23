@@ -2,13 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 const posts = [
   {
-    slug: "understanding-dmf-regulated-markets",
-    title: "Understanding DMF requirements for regulated API markets",
-    excerpt: "What manufacturers need to know about Drug Master Files when sourcing APIs for the US, EU and Japan.",
-    date: "2025-04-12",
-    category: "Regulatory",
-  },
-  {
     slug: "heavy-metals-food-grade-chemicals",
     title: "Heavy metal limits in food-grade chemicals: a practical guide",
     excerpt: "FCC vs. JECFA vs. national limits — how to read CoAs and what to insist on from suppliers.",
