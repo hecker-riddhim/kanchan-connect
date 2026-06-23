@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import {
-  ArrowRight, BadgeCheck, ShieldCheck, Truck, FlaskConical, Leaf, Beaker, Stethoscope,
+  ArrowRight, BadgeCheck, ShieldCheck, FlaskConical, Leaf, Beaker, Stethoscope,
   Sandwich, Microscope, Globe2, ChevronDown,
 } from "lucide-react";
 import heroImg from "@/assets/hero-minerals.jpg";
