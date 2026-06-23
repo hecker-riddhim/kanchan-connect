@@ -8,7 +8,7 @@ export const Route = createFileRoute("/certifications")({
   head: () => ({
     meta: [
       { title: "Certifications & Compliance — Kanchan International" },
-      { name: "description", content: "GMP, ISO 9001:2015, DMF, SDS/GHS — explore the certifications and compliance standards behind Kanchan International's chemical supply." },
+      { name: "description", content: "GMP, ISO 9001:2015, FSSAI, REACH — explore the certifications and compliance standards behind Kanchan International's chemical supply." },
       { property: "og:title", content: "Certifications & Compliance — Kanchan International" },
       { property: "og:description", content: "Quality and compliance standards for global B2B chemical supply." },
       { property: "og:url", content: "/certifications" },
@@ -22,8 +22,6 @@ type Cert = { title: string; issuer: string; body: string };
 const certs: Cert[] = [
   { title: "GMP Aligned Sourcing", issuer: "WHO / EU-GMP audited partners", body: "All APIs and pharmaceutical intermediates are sourced from manufacturers audited against current GMP standards." },
   { title: "ISO 9001:2015", issuer: "Quality Management System", body: "Documented quality management across sourcing, storage, repacking and dispatch operations." },
-  { title: "Drug Master File (DMF)", issuer: "Available on request", body: "DMF support available for regulated markets including US, EU, Japan, Korea and Australia." },
-  { title: "SDS / GHS Compliance", issuer: "Globally Harmonised System", body: "Safety Data Sheets aligned with GHS Rev. 9, available in multiple languages on request." },
   { title: "Low Heavy Metals", issuer: "ICH Q3D / USP <232>", body: "Validated impurity profiles per batch, with elemental impurity data available where required." },
   { title: "Halal & Kosher", issuer: "For food-grade lines", body: "Halal and Kosher certificates available for applicable food-grade chemical products." },
   { title: "REACH Pre-registration", issuer: "European Chemicals Agency", body: "REACH pre-registration support for relevant intermediates and chemicals exported to the EU." },
@@ -78,7 +76,7 @@ function CertificationsPage() {
             <div>
               <h2 className="font-display text-2xl text-brand">Need a specific document?</h2>
               <p className="mt-2 text-ink-soft">
-                Certificates of Analysis, Safety Data Sheets, DMFs, COO and stability data are available
+                Certificates of Analysis, COO and stability data are available
                 on request for any product in our catalogue.
               </p>
             </div>

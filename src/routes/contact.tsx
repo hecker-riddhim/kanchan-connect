@@ -7,7 +7,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Kanchan International" },
-      { name: "description", content: "Request a quote, technical data sheet or SDS. Our Mumbai team responds within 24 hours." },
+      { name: "description", content: "Request a quote or technical data sheet. Our Mumbai team responds within 24 hours." },
       { property: "og:title", content: "Contact Kanchan International" },
       { property: "og:description", content: "Sales team in Mumbai — responds within 24 hours." },
       { property: "og:url", content: "/contact" },

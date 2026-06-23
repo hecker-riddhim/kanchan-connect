@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { Download, FileText, ShieldCheck } from "lucide-react";
+import { FileText, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -121,9 +121,6 @@ function ProductDetail() {
                 <ContactForm defaultCategory={product.category} />
               </DialogContent>
             </Dialog>
-            <Button size="lg" variant="outline" className="border-navy/20 text-navy hover:bg-secondary">
-              <Download className="mr-2 h-4 w-4" /> Download SDS
-            </Button>
           </div>
         </div>
       </section>
@@ -158,7 +155,7 @@ function ProductDetail() {
             </ul>
           </TabsContent>
           <TabsContent value="docs" className="mt-6 space-y-3">
-            {["Safety Data Sheet (SDS)", "Certificate of Analysis (CoA)", "Technical Data Sheet"].map((d) => (
+            {["Certificate of Analysis (CoA)", "Technical Data Sheet"].map((d) => (
               <div key={d} className="flex items-center justify-between rounded-md border border-border bg-card p-4">
                 <span className="flex items-center gap-3 text-sm text-navy">
                   <FileText className="h-4 w-4 text-gold" /> {d}

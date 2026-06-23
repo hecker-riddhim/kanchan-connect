@@ -5,10 +5,10 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About Kanchan International — Four Decades in Specialty Chemicals" },
-      { name: "description", content: "Kanchan International is a Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs and pharmaceutical intermediates — backed by four decades of manufacturing know-how and global compliance." },
+      { title: "About Kanchan International — Three Decades in Specialty Chemicals" },
+      { name: "description", content: "Kanchan International is a Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs and pharmaceutical intermediates — backed by three decades of manufacturing know-how and global compliance." },
       { property: "og:title", content: "About Kanchan International" },
-      { property: "og:description", content: "Four decades of specialty-chemical manufacturing and trading expertise, serving pharma, nutraceutical, food and veterinary industries worldwide." },
+      { property: "og:description", content: "Three decades of specialty-chemical manufacturing and trading expertise, serving pharma, nutraceutical, food and veterinary industries worldwide." },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -32,10 +32,10 @@ function AboutPage() {
         <div className="container-page py-16 md:py-24">
           <p className="text-xs uppercase tracking-[0.18em] text-accent-orange">About Kanchan International</p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-balance text-brand md:text-5xl">
-            Four decades of expertise in specialty chemicals — from Mumbai to manufacturers worldwide.
+            Three decades of expertise in specialty chemicals — from Mumbai to manufacturers worldwide.
           </h1>
           <p className="mt-5 max-w-2xl text-ink-soft md:text-lg">
-            Kanchan International has been engaged in the specialty-chemical business for over four
+            Kanchan International has been engaged in the specialty-chemical business for over three
             decades. Our deep manufacturing know-how, vast distribution network and trusted relationships
             with reputed customers form the foundation of everything we do.
           </p>
@@ -51,7 +51,7 @@ function AboutPage() {
           </h2>
           <div className="mt-6 space-y-5 leading-relaxed text-ink-soft">
             <p>
-              For more than forty years we have built a strong presence in the Indian specialty-chemical
+              For more than thirty years we have built a strong presence in the Indian specialty-chemical
               market — earning the goodwill of reputed pharmaceutical, nutraceutical, food and veterinary
               customers. The engineering and process know-how for our entire product range has been
               developed in-house, and we extend the same expertise as consultancy to several partner
@@ -95,7 +95,7 @@ function AboutPage() {
       <section className="bg-brand text-paper">
         <div className="container-page grid gap-10 py-16 md:grid-cols-4">
           {[
-            { Icon: Factory, n: "40+", l: "Years in specialty chemicals" },
+            { Icon: Factory, n: "30+", l: "Years in specialty chemicals" },
             { Icon: Globe2, n: "Pan-India", l: "Distribution & export reach" },
             { Icon: Award, n: "ISO 9001", l: "Quality management system" },
             { Icon: ShieldCheck, n: "FSSAI", l: "Registered food-grade operations" },

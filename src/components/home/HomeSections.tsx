@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import {
-  ArrowRight, BadgeCheck, ShieldCheck, Truck, FlaskConical, Leaf, Beaker, Stethoscope,
+  ArrowRight, BadgeCheck, ShieldCheck, FlaskConical, Leaf, Beaker, Stethoscope,
   Sandwich, Microscope, Globe2, ChevronDown,
 } from "lucide-react";
 import heroImg from "@/assets/hero-minerals.jpg";
@@ -25,9 +25,9 @@ const industries = [
 ];
 
 const faqs = [
-  { q: "Do you provide SDS and CoA documentation?", a: "Yes. Every consignment ships with a Certificate of Analysis, Safety Data Sheet (GHS-compliant, multi-language available), and on request, Technical Data Sheets and DMF support for regulated markets." },
-  { q: "Which industries do you serve?", a: "Pharmaceutical and nutraceutical manufacturers, veterinary drug formulators, food and beverage processors, chemical distributors and research laboratories — across India and 40+ export destinations." },
-  { q: "Do you supply internationally?", a: "Yes. We export to North America, Europe, the Middle East, Africa and the ASEAN region. We handle CHA coordination, multimodal logistics and complete export documentation including COO, CoA and SDS." },
+  { q: "What documentation do you provide with shipments?", a: "Every consignment ships with a Certificate of Analysis and, on request, Technical Data Sheets and additional regulatory support documents." },
+  { q: "Which industries do you serve?", a: "Pharmaceutical and nutraceutical manufacturers, veterinary drug formulators, food and beverage processors, chemical distributors and research laboratories — across India and 30+ export destinations." },
+  { q: "Do you supply internationally?", a: "Yes. We export to North America, Europe, the Middle East, Africa and the ASEAN region. We handle CHA coordination, multimodal logistics and complete export documentation including COO and CoA." },
   { q: "Are your products GMP compliant?", a: "Our APIs and pharma intermediates are sourced from WHO-GMP and EU-GMP audited manufacturers. Food-grade chemicals comply with FCC, FSSAI and applicable kosher/halal standards." },
 ];
 
@@ -39,7 +39,7 @@ export function HomeSections() {
         <div className="container-page relative grid items-center gap-12 py-16 md:grid-cols-[1.05fr_1fr] md:py-24 lg:py-28">
           <div className="fade-up">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-cream px-3 py-1 text-xs uppercase tracking-[0.16em] text-brand">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent-orange" /> Mumbai · Four decades in specialty chemicals
+              <span className="h-1.5 w-1.5 rounded-full bg-accent-orange" /> Mumbai · Three decades in specialty chemicals
             </span>
             <h1 className="mt-6 font-display text-4xl text-balance text-ink md:text-5xl lg:text-[3.5rem]">
               Mineral fortificants, APIs and intermediates —
@@ -48,7 +48,7 @@ export function HomeSections() {
             <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
               Kanchan International supplies high-purity iron, zinc and copper compounds,
               active pharmaceutical ingredients and contrast-media intermediates — backed by
-              four decades of in-house manufacturing know-how, pharmacopoeial-grade quality
+              three decades of in-house manufacturing know-how, pharmacopoeial-grade quality
               control and complete export documentation.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -132,12 +132,10 @@ export function HomeSections() {
               reliable and globally accepted chemical products.
             </p>
           </div>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
             {[
               { title: "GMP Aligned", body: "Sourced from WHO/EU-GMP audited manufacturers." },
               { title: "ISO 9001:2015", body: "Quality management system across operations." },
-              { title: "DMF Available", body: "On request for regulated pharma markets." },
-              { title: "SDS / GHS Compliant", body: "Multi-language safety documentation." },
               { title: "Low Heavy Metals", body: "Validated impurity profiles per batch." },
             ].map((c) => (
               <div key={c.title} className="rounded-xl border border-border bg-paper p-6 text-center transition hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-[var(--shadow-soft)]">
@@ -172,30 +170,8 @@ export function HomeSections() {
         </div>
       </section>
 
-      {/* WHY */}
-      <section aria-labelledby="why-h" className="bg-cream py-20 md:py-24">
-        <div className="container-page">
-          <p className="text-xs uppercase tracking-[0.16em] text-accent-orange">Why Kanchan</p>
-          <h2 id="why-h" className="mt-2 max-w-2xl font-display text-3xl text-brand md:text-4xl">
-            A supply partner manufacturers can plan around.
-          </h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {[
-              { Icon: ShieldCheck, title: "Consistent quality assurance", body: "Every batch ships with CoA, residual solvent and heavy-metal data. DMF available for regulated markets." },
-              { Icon: BadgeCheck, title: "Regulatory-compliant solutions", body: "GMP-aligned sourcing, USP / BP / EP / IP grades and GHS-compliant SDS in multiple languages." },
-              { Icon: Truck, title: "Reliable global sourcing", body: "Bonded warehousing in Mumbai, multimodal logistics and forward contracts for high-volume customers." },
-            ].map(({ Icon, title, body }) => (
-              <div key={title} className="rounded-xl border border-border bg-paper p-7 transition hover:-translate-y-0.5 hover:shadow-[var(--shadow-soft)]">
-                <span className="grid h-11 w-11 place-items-center rounded-full bg-brand-soft text-brand">
-                  <Icon className="h-5 w-5" />
-                </span>
-                <h3 className="mt-5 font-display text-xl text-brand">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft">{body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
+
 
       {/* INDUSTRIES */}
       <section aria-labelledby="ind-h" className="container-page py-20 md:py-24">
@@ -248,7 +224,7 @@ export function HomeSections() {
             </div>
             <dl className="grid grid-cols-2 gap-5">
               {[
-                { k: "40+", v: "Years of experience" },
+                { k: "30+", v: "Years of experience" },
                 { k: "60+", v: "Products in catalogue" },
                 { k: "4", v: "Product categories" },
                 { k: "6", v: "Industries served" },
