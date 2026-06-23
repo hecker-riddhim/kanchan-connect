@@ -51,7 +51,7 @@ function AboutPage() {
           </h2>
           <div className="mt-6 space-y-5 leading-relaxed text-ink-soft">
             <p>
-              For more than forty years we have built a strong presence in the Indian specialty-chemical
+              For more than thirty years we have built a strong presence in the Indian specialty-chemical
               market — earning the goodwill of reputed pharmaceutical, nutraceutical, food and veterinary
               customers. The engineering and process know-how for our entire product range has been
               developed in-house, and we extend the same expertise as consultancy to several partner
