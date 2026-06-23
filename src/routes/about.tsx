@@ -5,10 +5,10 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About Kanchan International — Four Decades in Specialty Chemicals" },
-      { name: "description", content: "Kanchan International is a Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs and pharmaceutical intermediates — backed by four decades of manufacturing know-how and global compliance." },
+      { title: "About Kanchan International — Three Decades in Specialty Chemicals" },
+      { name: "description", content: "Kanchan International is a Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs and pharmaceutical intermediates — backed by three decades of manufacturing know-how and global compliance." },
       { property: "og:title", content: "About Kanchan International" },
-      { property: "og:description", content: "Four decades of specialty-chemical manufacturing and trading expertise, serving pharma, nutraceutical, food and veterinary industries worldwide." },
+      { property: "og:description", content: "Three decades of specialty-chemical manufacturing and trading expertise, serving pharma, nutraceutical, food and veterinary industries worldwide." },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
