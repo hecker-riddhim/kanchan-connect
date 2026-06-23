@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
 import { categories } from "@/data/products";
-import logo from "@/assets/kanchan-logo.png";
 
 const WA = "https://wa.me/917777047722?text=Hello%20Kanchan%20International%2C%20I%20would%20like%20to%20enquire%20about%20your%20chemical%20products.";
 
