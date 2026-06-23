@@ -39,7 +39,7 @@ export function HomeSections() {
         <div className="container-page relative grid items-center gap-12 py-16 md:grid-cols-[1.05fr_1fr] md:py-24 lg:py-28">
           <div className="fade-up">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-cream px-3 py-1 text-xs uppercase tracking-[0.16em] text-brand">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent-orange" /> Mumbai · Four decades in specialty chemicals
+              <span className="h-1.5 w-1.5 rounded-full bg-accent-orange" /> Mumbai · Three decades in specialty chemicals
             </span>
             <h1 className="mt-6 font-display text-4xl text-balance text-ink md:text-5xl lg:text-[3.5rem]">
               Mineral fortificants, APIs and intermediates —
