@@ -304,6 +304,4 @@ export const trustBadges = [
   "ISO 9001:2015",
   "FSSAI Registered",
   "WHO-GMP Sourced",
-  "DMF Available",
-  "SDS / GHS Compliant",
 ];
