@@ -25,9 +25,9 @@ const industries = [
 ];
 
 const faqs = [
-  { q: "Do you provide SDS and CoA documentation?", a: "Yes. Every consignment ships with a Certificate of Analysis, Safety Data Sheet (GHS-compliant, multi-language available), and on request, Technical Data Sheets and DMF support for regulated markets." },
-  { q: "Which industries do you serve?", a: "Pharmaceutical and nutraceutical manufacturers, veterinary drug formulators, food and beverage processors, chemical distributors and research laboratories — across India and 40+ export destinations." },
-  { q: "Do you supply internationally?", a: "Yes. We export to North America, Europe, the Middle East, Africa and the ASEAN region. We handle CHA coordination, multimodal logistics and complete export documentation including COO, CoA and SDS." },
+  { q: "What documentation do you provide with shipments?", a: "Every consignment ships with a Certificate of Analysis and, on request, Technical Data Sheets and additional regulatory support documents." },
+  { q: "Which industries do you serve?", a: "Pharmaceutical and nutraceutical manufacturers, veterinary drug formulators, food and beverage processors, chemical distributors and research laboratories — across India and 30+ export destinations." },
+  { q: "Do you supply internationally?", a: "Yes. We export to North America, Europe, the Middle East, Africa and the ASEAN region. We handle CHA coordination, multimodal logistics and complete export documentation including COO and CoA." },
   { q: "Are your products GMP compliant?", a: "Our APIs and pharma intermediates are sourced from WHO-GMP and EU-GMP audited manufacturers. Food-grade chemicals comply with FCC, FSSAI and applicable kosher/halal standards." },
 ];
 
