@@ -95,7 +95,7 @@ function AboutPage() {
       <section className="bg-brand text-paper">
         <div className="container-page grid gap-10 py-16 md:grid-cols-4">
           {[
-            { Icon: Factory, n: "40+", l: "Years in specialty chemicals" },
+            { Icon: Factory, n: "30+", l: "Years in specialty chemicals" },
             { Icon: Globe2, n: "Pan-India", l: "Distribution & export reach" },
             { Icon: Award, n: "ISO 9001", l: "Quality management system" },
             { Icon: ShieldCheck, n: "FSSAI", l: "Registered food-grade operations" },
