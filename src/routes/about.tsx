@@ -32,10 +32,10 @@ function AboutPage() {
         <div className="container-page py-16 md:py-24">
           <p className="text-xs uppercase tracking-[0.18em] text-accent-orange">About Kanchan International</p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-balance text-brand md:text-5xl">
-            Four decades of expertise in specialty chemicals — from Mumbai to manufacturers worldwide.
+            Three decades of expertise in specialty chemicals — from Mumbai to manufacturers worldwide.
           </h1>
           <p className="mt-5 max-w-2xl text-ink-soft md:text-lg">
-            Kanchan International has been engaged in the specialty-chemical business for over four
+            Kanchan International has been engaged in the specialty-chemical business for over three
             decades. Our deep manufacturing know-how, vast distribution network and trusted relationships
             with reputed customers form the foundation of everything we do.
           </p>
