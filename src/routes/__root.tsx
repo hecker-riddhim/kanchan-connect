@@ -100,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           },
           contactPoint: {
             "@type": "ContactPoint",
-            telephone: "+91-9869120279",
+            telephone: "+91-7777047722",
             email: "info@kanchanin.com",
             contactType: "sales",
             areaServed: "Worldwide",

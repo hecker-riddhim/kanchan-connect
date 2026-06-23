@@ -40,18 +40,17 @@ function ContactPage() {
         </div>
 
         <aside className="space-y-5">
-          <ContactCard Icon={MapPin} title="Registered Office">
+          <ContactCard Icon={MapPin} title="Registered Office" href="https://maps.app.goo.gl/XJLKKiVF6FXijg19A">
             404, Ganjawala Tower, 508,<br />
             Sane Guruji Marg, Tardeo,<br />
             Mumbai 400 034, India
           </ContactCard>
-          <ContactCard Icon={MapPin} title="Office">
+          <ContactCard Icon={MapPin} title="Office" href="https://maps.app.goo.gl/SNxFPF9iZUQXP7fz9">
             16, 2nd Floor, Moose Building,<br />
             514 Kalbadevi Road,<br />
             Mumbai 400 002, India
           </ContactCard>
           <ContactCard Icon={Phone} title="Phone">
-            <a href="tel:+919869120279" className="block hover:text-brand">+91 98691 20279</a>
             <a href="tel:+917777047722" className="block hover:text-brand">+91 7777 047 722</a>
           </ContactCard>
           <ContactCard Icon={Mail} title="Email">
@@ -89,9 +88,9 @@ function ContactPage() {
   );
 }
 
-function ContactCard({ Icon, title, children }: { Icon: typeof Mail; title: string; children: React.ReactNode }) {
-  return (
-    <div className="flex gap-4 rounded-xl border border-border bg-paper p-5">
+function ContactCard({ Icon, title, children, href }: { Icon: typeof Mail; title: string; children: React.ReactNode; href?: string }) {
+  const body = (
+    <>
       <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-brand-soft text-brand">
         <Icon className="h-4 w-4" />
       </span>
@@ -99,6 +98,14 @@ function ContactCard({ Icon, title, children }: { Icon: typeof Mail; title: stri
         <p className="text-xs font-semibold uppercase tracking-wider text-accent-orange">{title}</p>
         <p className="mt-1 text-sm text-ink">{children}</p>
       </div>
-    </div>
+    </>
   );
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noreferrer noopener" className="flex gap-4 rounded-xl border border-border bg-paper p-5 transition hover:border-accent-orange hover:shadow-[var(--shadow-soft)]">
+        {body}
+      </a>
+    );
+  }
+  return <div className="flex gap-4 rounded-xl border border-border bg-paper p-5">{body}</div>;
 }
