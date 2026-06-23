@@ -40,18 +40,17 @@ function ContactPage() {
         </div>
 
         <aside className="space-y-5">
-          <ContactCard Icon={MapPin} title="Registered Office">
+          <ContactCard Icon={MapPin} title="Registered Office" href="https://maps.app.goo.gl/XJLKKiVF6FXijg19A">
             404, Ganjawala Tower, 508,<br />
             Sane Guruji Marg, Tardeo,<br />
             Mumbai 400 034, India
           </ContactCard>
-          <ContactCard Icon={MapPin} title="Office">
+          <ContactCard Icon={MapPin} title="Office" href="https://maps.app.goo.gl/SNxFPF9iZUQXP7fz9">
             16, 2nd Floor, Moose Building,<br />
             514 Kalbadevi Road,<br />
             Mumbai 400 002, India
           </ContactCard>
           <ContactCard Icon={Phone} title="Phone">
-            <a href="tel:+919869120279" className="block hover:text-brand">+91 98691 20279</a>
             <a href="tel:+917777047722" className="block hover:text-brand">+91 7777 047 722</a>
           </ContactCard>
           <ContactCard Icon={Mail} title="Email">
