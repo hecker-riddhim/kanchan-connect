@@ -121,9 +121,6 @@ function ProductDetail() {
                 <ContactForm defaultCategory={product.category} />
               </DialogContent>
             </Dialog>
-            <Button size="lg" variant="outline" className="border-navy/20 text-navy hover:bg-secondary">
-              <Download className="mr-2 h-4 w-4" /> Download SDS
-            </Button>
           </div>
         </div>
       </section>
