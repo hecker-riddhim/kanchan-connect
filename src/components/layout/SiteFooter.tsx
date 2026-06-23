@@ -9,7 +9,7 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border bg-cream">
       <div className="container-page grid gap-12 py-16 md:grid-cols-12">
         <div className="md:col-span-4">
-          <img src={logo} alt="Kanchan International" width={260} height={88} className="h-20 w-auto" />
+          <p className="font-display text-2xl text-brand">Kanchan International</p>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink-soft">
             A Mumbai-based supplier of food-grade chemicals, human and veterinary active pharmaceutical
             ingredients, and pharmaceutical intermediates — trusted by manufacturers across pharma,
