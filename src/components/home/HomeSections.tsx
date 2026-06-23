@@ -48,7 +48,7 @@ export function HomeSections() {
             <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg">
               Kanchan International supplies high-purity iron, zinc and copper compounds,
               active pharmaceutical ingredients and contrast-media intermediates — backed by
-              four decades of in-house manufacturing know-how, pharmacopoeial-grade quality
+              three decades of in-house manufacturing know-how, pharmacopoeial-grade quality
               control and complete export documentation.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
