@@ -89,7 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           url: "/",
           logo: logoUrl,
           description:
-            "Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs, and pharmaceutical intermediates — with four decades of specialty-chemical expertise.",
+            "Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs, and pharmaceutical intermediates — with three decades of specialty-chemical expertise.",
           address: {
             "@type": "PostalAddress",
             streetAddress: "404, Ganjawala Tower, 508, Sane Guruji Marg, Tardeo",
