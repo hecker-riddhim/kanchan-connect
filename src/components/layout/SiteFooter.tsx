@@ -68,7 +68,7 @@ export function SiteFooter() {
             <li className="flex gap-3">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent-orange" />
               <div>
-                <a href="tel:+919869120279" className="block hover:text-brand">+91 98691 20279</a>
+                
                 <a href="tel:+917777047722" className="block hover:text-brand">+91 7777 047 722</a>
               </div>
             </li>
