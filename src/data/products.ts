@@ -236,7 +236,7 @@ export const products: Product[] = [
   mk("5-aminoisophthalic-acid", "5-Aminoisophthalic Acid", IN, "99-31-0",
     ["X-ray contrast media intermediate", "Polymer synthesis"],
     "Key intermediate for non-ionic iodinated contrast agents (iohexol, iopamidol) and for high-performance polyamide synthesis.",
-    { purity: "≥ 99.0%", compliance: ["In-house / DMF"], featured: true }),
+    { purity: "≥ 99.0%", compliance: ["In-house"], featured: true }),
   mk("5-nitroisophthalic-acid", "5-Nitroisophthalic Acid", IN, "618-88-2",
     ["Contrast media intermediate", "Dye synthesis"],
     "Precursor to 5-aminoisophthalic acid and a versatile intermediate for X-ray contrast agents and dyestuffs.",
