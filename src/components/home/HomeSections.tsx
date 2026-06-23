@@ -170,30 +170,8 @@ export function HomeSections() {
         </div>
       </section>
 
-      {/* WHY */}
-      <section aria-labelledby="why-h" className="bg-cream py-20 md:py-24">
-        <div className="container-page">
-          <p className="text-xs uppercase tracking-[0.16em] text-accent-orange">Why Kanchan</p>
-          <h2 id="why-h" className="mt-2 max-w-2xl font-display text-3xl text-brand md:text-4xl">
-            A supply partner manufacturers can plan around.
-          </h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {[
-              { Icon: ShieldCheck, title: "Consistent quality assurance", body: "Every batch ships with CoA, residual solvent and heavy-metal data. DMF available for regulated markets." },
-              { Icon: BadgeCheck, title: "Regulatory-compliant solutions", body: "GMP-aligned sourcing, USP / BP / EP / IP grades and GHS-compliant SDS in multiple languages." },
-              { Icon: Truck, title: "Reliable global sourcing", body: "Bonded warehousing in Mumbai, multimodal logistics and forward contracts for high-volume customers." },
-            ].map(({ Icon, title, body }) => (
-              <div key={title} className="rounded-xl border border-border bg-paper p-7 transition hover:-translate-y-0.5 hover:shadow-[var(--shadow-soft)]">
-                <span className="grid h-11 w-11 place-items-center rounded-full bg-brand-soft text-brand">
-                  <Icon className="h-5 w-5" />
-                </span>
-                <h3 className="mt-5 font-display text-xl text-brand">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft">{body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
+
 
       {/* INDUSTRIES */}
       <section aria-labelledby="ind-h" className="container-page py-20 md:py-24">
