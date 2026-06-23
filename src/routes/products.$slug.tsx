@@ -155,7 +155,7 @@ function ProductDetail() {
             </ul>
           </TabsContent>
           <TabsContent value="docs" className="mt-6 space-y-3">
-            {["Safety Data Sheet (SDS)", "Certificate of Analysis (CoA)", "Technical Data Sheet"].map((d) => (
+            {["Certificate of Analysis (CoA)", "Technical Data Sheet"].map((d) => (
               <div key={d} className="flex items-center justify-between rounded-md border border-border bg-card p-4">
                 <span className="flex items-center gap-3 text-sm text-navy">
                   <FileText className="h-4 w-4 text-gold" /> {d}
