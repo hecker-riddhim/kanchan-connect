@@ -76,7 +76,7 @@ function CertificationsPage() {
             <div>
               <h2 className="font-display text-2xl text-brand">Need a specific document?</h2>
               <p className="mt-2 text-ink-soft">
-                Certificates of Analysis, Safety Data Sheets, DMFs, COO and stability data are available
+                Certificates of Analysis, COO and stability data are available
                 on request for any product in our catalogue.
               </p>
             </div>
