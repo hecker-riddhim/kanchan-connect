@@ -1,0 +1,8 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "kanchan-international",
+  "compatibility_date": "2025-01-01",
+  "main": "./dist/server/server.js",
+  "assets": { "directory": "./dist/client" },
+  "compatibility_flags": ["nodejs_compat"]
+}
