@@ -6,10 +6,10 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
   head: () => ({
     meta: [
-      { title: "Contact — Kanchan International" },
+      { title: "Contact, Kanchan International" },
       { name: "description", content: "Request a quote or technical data sheet. Our Mumbai team responds within 24 hours." },
       { property: "og:title", content: "Contact Kanchan International" },
-      { property: "og:description", content: "Sales team in Mumbai — responds within 24 hours." },
+      { property: "og:description", content: "Sales team in Mumbai, responds within 24 hours." },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -25,10 +25,10 @@ function ContactPage() {
         <div className="container-page py-14 md:py-20">
           <p className="text-xs uppercase tracking-[0.16em] text-accent-orange">Contact</p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-brand md:text-5xl">
-            Tell us what you need — we respond within 24 hours.
+            Tell us what you need, we respond within 24 hours.
           </h1>
           <p className="mt-4 max-w-2xl text-ink-soft md:text-lg">
-            Pricing, lead time, documentation, custom packaging — share specifications and target
+            Pricing, lead time, documentation, custom packaging, share specifications and target
             volume, and our sales team will get back to you with a complete proposal.
           </p>
         </div>
@@ -74,7 +74,7 @@ function ContactPage() {
       <section className="container-page pb-20">
         <div className="overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-soft)]">
           <iframe
-            title="Kanchan International — Mumbai office on Google Maps"
+            title="Kanchan International, Mumbai office on Google Maps"
             src="https://www.google.com/maps?q=Kalbadevi+Road+Mumbai+400002&output=embed"
             width="100%"
             height="420"

@@ -59,7 +59,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Kanchan International — Chemical Ingredients, APIs & Intermediates" },
+      { title: "Kanchan International, Chemical Ingredients, APIs & Intermediates" },
       { name: "description", content: "Mumbai-based supplier of food-grade chemicals, human and veterinary APIs, and pharmaceutical intermediates. GMP-aligned sourcing, full documentation, global shipping." },
       { name: "author", content: "Kanchan International" },
       { property: "og:site_name", content: "Kanchan International" },
@@ -89,7 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           url: "/",
           logo: logoUrl,
           description:
-            "Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs, and pharmaceutical intermediates — with three decades of specialty-chemical expertise.",
+            "Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs, and pharmaceutical intermediates, with five decades of specialty-chemical expertise.",
           address: {
             "@type": "PostalAddress",
             streetAddress: "404, Ganjawala Tower, 508, Sane Guruji Marg, Tardeo",

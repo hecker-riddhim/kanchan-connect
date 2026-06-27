@@ -36,7 +36,7 @@ export function ContactForm({ defaultCategory }: { defaultCategory?: string }) {
     setSubmitting(true);
     await new Promise((r) => setTimeout(r, 700));
     setSubmitting(false);
-    toast.success("Thank you — our sales team will respond within 24 hours.");
+    toast.success("Thank you, our sales team will respond within 24 hours.");
     reset({ productInterest: defaultCategory ?? "" });
   };
 

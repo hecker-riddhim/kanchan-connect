@@ -12,7 +12,7 @@ export function SiteFooter() {
           <p className="font-display text-2xl text-brand">Kanchan International</p>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink-soft">
             A Mumbai-based supplier of food-grade chemicals, human and veterinary active pharmaceutical
-            ingredients, and pharmaceutical intermediates — trusted by manufacturers across pharma,
+            ingredients, and pharmaceutical intermediates, trusted by manufacturers across pharma,
             nutraceutical, food and veterinary industries worldwide.
           </p>
           <a

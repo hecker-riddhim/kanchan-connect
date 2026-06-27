@@ -11,9 +11,9 @@ export const Route = createFileRoute("/products/")({
   component: ProductsPage,
   head: () => ({
     meta: [
-      { title: "Products — Kanchan International" },
+      { title: "Products, Kanchan International" },
       { name: "description", content: "Browse our full catalogue of food-grade chemicals, human and veterinary APIs, and pharmaceutical intermediates." },
-      { property: "og:title", content: "Products — Kanchan International" },
+      { property: "og:title", content: "Products, Kanchan International" },
       { property: "og:description", content: "Search across our chemical ingredients catalogue." },
       { property: "og:url", content: "/products" },
     ],

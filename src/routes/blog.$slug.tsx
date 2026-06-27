@@ -12,7 +12,7 @@ export const Route = createFileRoute("/blog/$slug")({
     const { post } = loaderData;
     return {
       meta: [
-        { title: `${post.title} — Kanchan International` },
+        { title: `${post.title}, Kanchan International` },
         { name: "description", content: post.excerpt },
         { property: "og:title", content: post.title },
         { property: "og:description", content: post.excerpt },
@@ -53,7 +53,7 @@ function PostPage() {
         <p className="text-lg text-navy">{post.excerpt}</p>
         <p>
           This is a placeholder article body for the Kanchan International insights blog. Replace
-          this content with the full article copy when ready — the structure, typography and SEO
+          this content with the full article copy when ready, the structure, typography and SEO
           metadata are fully wired up.
         </p>
         <p>

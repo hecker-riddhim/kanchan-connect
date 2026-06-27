@@ -59,7 +59,7 @@
 :root {
   --radius: 0.625rem;
 
-  /* Brand — extracted from Kanchan International logo */
+  /* Brand, extracted from Kanchan International logo */
   --brand: oklch(0.40 0.07 155);            /* #264C3B deep green */
   --brand-deep: oklch(0.32 0.06 155);
   --brand-soft: oklch(0.93 0.03 150);

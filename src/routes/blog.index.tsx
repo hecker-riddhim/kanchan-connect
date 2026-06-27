@@ -4,7 +4,7 @@ const posts = [
   {
     slug: "heavy-metals-food-grade-chemicals",
     title: "Heavy metal limits in food-grade chemicals: a practical guide",
-    excerpt: "FCC vs. JECFA vs. national limits — how to read CoAs and what to insist on from suppliers.",
+    excerpt: "FCC vs. JECFA vs. national limits, how to read CoAs and what to insist on from suppliers.",
     date: "2025-03-22",
     category: "Quality",
   },
@@ -21,9 +21,9 @@ export const Route = createFileRoute("/blog/")({
   component: BlogIndex,
   head: () => ({
     meta: [
-      { title: "Insights — Kanchan International" },
+      { title: "Insights, Kanchan International" },
       { name: "description", content: "Articles on chemical sourcing, regulatory requirements, and quality standards from the Kanchan International team." },
-      { property: "og:title", content: "Insights — Kanchan International" },
+      { property: "og:title", content: "Insights, Kanchan International" },
       { property: "og:description", content: "Articles from the Kanchan International team." },
       { property: "og:url", content: "/blog" },
     ],

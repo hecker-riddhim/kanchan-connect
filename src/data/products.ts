@@ -79,7 +79,7 @@ const mk = (
 });
 
 export const products: Product[] = [
-  // ───────── FOOD GRADE — IRON ─────────
+  // ───────── FOOD GRADE, IRON ─────────
   mk("ferrous-fumarate", "Ferrous Fumarate", FG, "141-01-5",
     ["Iron fortification", "Anti-anaemia tablets", "Nutraceutical premixes"],
     "Highly bioavailable iron source widely used in haematinic formulations and food fortification. Reddish-orange free-flowing powder with consistent particle size and low moisture content.",
@@ -90,11 +90,11 @@ export const products: Product[] = [
     { purity: "Fe ≥ 30.0%", compliance: ["USP", "BP", "IP"] }),
   mk("ferrous-sulphate-heptahydrate", "Ferrous Sulphate Heptahydrate", FG, "7782-63-0",
     ["Water treatment", "Fertiliser", "Iron supplement"],
-    "Crystalline FeSO₄·7H₂O of food and technical grade — supplied for nutritional, agricultural and industrial use.",
+    "Crystalline FeSO₄·7H₂O of food and technical grade, supplied for nutritional, agricultural and industrial use.",
     { purity: "≥ 99.0%", compliance: ["FCC", "BP"] }),
   mk("ferrous-ammonium-sulphate", "Ferrous Ammonium Sulphate", FG, "10138-04-2",
     ["Analytical reagent", "Iron premix", "Pharma intermediate"],
-    "Mohr's salt — a stable, light-blue-green crystalline ferrous source used in analytical chemistry and as a reference iron compound.",
+    "Mohr's salt, a stable, light-blue-green crystalline ferrous source used in analytical chemistry and as a reference iron compound.",
     { purity: "≥ 99.0%", compliance: ["AR", "IP"] }),
   mk("ferric-orthophosphate", "Ferric Orthophosphate (Soluble & Insoluble)", FG, "10045-86-0",
     ["Food fortification", "Cereal & flour enrichment", "Infant nutrition"],
@@ -118,10 +118,10 @@ export const products: Product[] = [
     { purity: "Fe ≥ 97.0%", compliance: ["FCC", "USP"] }),
   mk("electrolytic-iron-powder", "Electrolytic Iron Powder", FG, "7439-89-6",
     ["Pharma haematinics", "Premix blends", "Sintering"],
-    "High-purity dendritic iron powder produced electrolytically — preferred where superior bioavailability and chemical purity are required.",
+    "High-purity dendritic iron powder produced electrolytically, preferred where superior bioavailability and chemical purity are required.",
     { purity: "Fe ≥ 99.0%", compliance: ["USP", "FCC"] }),
 
-  // ───────── FOOD GRADE — ZINC ─────────
+  // ───────── FOOD GRADE, ZINC ─────────
   mk("zinc-sulphate-monohydrate", "Zinc Sulphate Monohydrate", FG, "7446-19-7",
     ["Animal feed", "Nutritional supplements", "Fertiliser"],
     "Free-flowing white crystalline powder, the preferred zinc source for feed premixes and human nutrition due to high zinc concentration and stability.",
@@ -143,10 +143,10 @@ export const products: Product[] = [
     "Fine grey metallic zinc powder of controlled particle size, supplied for chemical synthesis, batteries and protective coatings.",
     { purity: "Zn ≥ 96.0%", compliance: ["Technical / AR"] }),
 
-  // ───────── FOOD GRADE — COPPER ─────────
+  // ───────── FOOD GRADE, COPPER ─────────
   mk("copper-sulphate-pentahydrate", "Copper Sulphate Pentahydrate", FG, "7758-98-7",
     ["Agriculture", "Animal feed", "Algicide", "Mining"],
-    "Bright blue crystalline CuSO₄·5H₂O — a versatile copper compound used in agriculture, feed premixes and water treatment.",
+    "Bright blue crystalline CuSO₄·5H₂O, a versatile copper compound used in agriculture, feed premixes and water treatment.",
     { purity: "Cu ≥ 25.0%", compliance: ["FCC", "BP"], featured: true }),
   mk("copper-sulphate-monohydrate", "Copper Sulphate Monohydrate", FG, "10257-54-2",
     ["Animal nutrition", "Premix manufacture", "Industrial"],
@@ -165,10 +165,10 @@ export const products: Product[] = [
     "High-purity dendritic and atomised copper powders for electronics, brake-lining and powder-metallurgy applications.",
     { purity: "Cu ≥ 99.0%", compliance: ["AR", "Technical"] }),
 
-  // ───────── FOOD GRADE — EXCIPIENTS ─────────
+  // ───────── FOOD GRADE, EXCIPIENTS ─────────
   mk("sodium-citrate", "Sodium Citrate", FG, "6132-04-3",
     ["pH regulator", "Anticoagulant", "Beverages & dairy"],
-    "Trisodium citrate dihydrate — a widely-used acidity regulator, emulsifying salt and pharmaceutical excipient.",
+    "Trisodium citrate dihydrate, a widely-used acidity regulator, emulsifying salt and pharmaceutical excipient.",
     { purity: "99.0–101.0%", compliance: ["USP", "BP", "FCC"] }),
   mk("purified-talcum-powder", "Purified Talcum Powder", FG, "14807-96-6",
     ["Tablet lubricant", "Glidant", "Cosmetics"],
@@ -207,7 +207,7 @@ export const products: Product[] = [
     { compliance: ["IP", "USP", "WHO"] }),
   mk("artesunate", "Artesunate", HA, "88495-63-0",
     ["Antimalarial injectable", "Severe malaria"],
-    "Water-soluble artemisinin derivative — the WHO-recommended first-line treatment for severe malaria.",
+    "Water-soluble artemisinin derivative, the WHO-recommended first-line treatment for severe malaria.",
     { compliance: ["IP", "USP", "WHO"] }),
   mk("povidone-iodine", "Povidone Iodine (Solution / Powder)", HA, "25655-41-8",
     ["Topical antiseptic", "Surgical scrub", "Disinfection"],
@@ -228,7 +228,7 @@ export const products: Product[] = [
     "Salicylanilide anthelmintic API for control of mature liver flukes in cattle, sheep and goats. Supplied in micronised grade with full impurity profile.",
     { compliance: ["BP-Vet"], featured: true }),
   mk("albendazole-vet", "Albendazole (Veterinary Grade)", VA, "54965-21-8",
-    ["Anthelmintic — ruminants & companion animals", "Boluses & oral suspensions"],
+    ["Anthelmintic, ruminants & companion animals", "Boluses & oral suspensions"],
     "Veterinary-grade albendazole with tight particle-size control for uniform dispersion in boluses, suspensions and premix formulations.",
     { compliance: ["BP-Vet", "USP"] }),
 
@@ -271,7 +271,7 @@ export const products: Product[] = [
     { purity: "≥ 99.5%", compliance: ["FCC", "BP", "USP"] }),
   mk("turkey-red-oil", "Turkey Red Oil (Sulphated Castor Oil)", IN, "8002-33-3",
     ["Textile dyeing", "Cosmetic emulsifier", "Lubricant"],
-    "Water-soluble sulphated castor oil — the original textile-industry surfactant, also used in personal care and metalworking.",
+    "Water-soluble sulphated castor oil, the original textile-industry surfactant, also used in personal care and metalworking.",
     { purity: "Active matter ≥ 50%", compliance: ["IS"] }),
   mk("zinc-sulphide", "Zinc Sulphide", IN, "1314-98-3",
     ["Pigment", "Phosphors & optical coatings", "Rubber compounding"],

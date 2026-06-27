@@ -14,9 +14,9 @@ export const Route = createFileRoute("/categories/$category")({
     const { category } = loaderData;
     return {
       meta: [
-        { title: `${category.name} — Kanchan International` },
+        { title: `${category.name}, Kanchan International` },
         { name: "description", content: category.blurb },
-        { property: "og:title", content: `${category.name} — Kanchan International` },
+        { property: "og:title", content: `${category.name}, Kanchan International` },
         { property: "og:description", content: category.blurb },
         { property: "og:url", content: `/categories/${params.category}` },
       ],
