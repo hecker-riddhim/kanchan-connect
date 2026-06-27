@@ -18,8 +18,8 @@ export const Route = createFileRoute("/products/$slug")({
   head: ({ loaderData, params }) => {
     const p = loaderData?.product;
     if (!p) return {};
-    const title = `${p.name} (CAS ${p.cas}) — Kanchan International`;
-    const desc = `${p.name} — ${p.purity}, ${p.category}. ${p.description.slice(0, 130)}`;
+    const title = `${p.name} (CAS ${p.cas}), Kanchan International`;
+    const desc = `${p.name}, ${p.purity}, ${p.category}. ${p.description.slice(0, 130)}`;
     return {
       meta: [
         { title },

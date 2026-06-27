@@ -7,9 +7,9 @@ export const Route = createFileRoute("/certifications")({
   component: CertificationsPage,
   head: () => ({
     meta: [
-      { title: "Certifications & Compliance — Kanchan International" },
-      { name: "description", content: "GMP, ISO 9001:2015, FSSAI, REACH — explore the certifications and compliance standards behind Kanchan International's chemical supply." },
-      { property: "og:title", content: "Certifications & Compliance — Kanchan International" },
+      { title: "Certifications & Compliance, Kanchan International" },
+      { name: "description", content: "GMP, ISO 9001:2015, FSSAI, REACH, explore the certifications and compliance standards behind Kanchan International's chemical supply." },
+      { property: "og:title", content: "Certifications & Compliance, Kanchan International" },
       { property: "og:description", content: "Quality and compliance standards for global B2B chemical supply." },
       { property: "og:url", content: "/certifications" },
     ],

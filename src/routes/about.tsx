@@ -5,10 +5,10 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About Kanchan International — Three Decades in Specialty Chemicals" },
-      { name: "description", content: "Kanchan International is a Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs and pharmaceutical intermediates — backed by three decades of manufacturing know-how and global compliance." },
+      { title: "About Kanchan International, Three Decades in Specialty Chemicals" },
+      { name: "description", content: "Kanchan International is a Mumbai-based supplier of food-grade mineral fortificants, human and veterinary APIs and pharmaceutical intermediates, backed by five decades of manufacturing know-how and global compliance." },
       { property: "og:title", content: "About Kanchan International" },
-      { property: "og:description", content: "Three decades of specialty-chemical manufacturing and trading expertise, serving pharma, nutraceutical, food and veterinary industries worldwide." },
+      { property: "og:description", content: "Five decades of specialty-chemical manufacturing and trading expertise, serving pharma, nutraceutical, food and veterinary industries worldwide." },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -18,9 +18,9 @@ export const Route = createFileRoute("/about")({
 const principles = [
   { Icon: HandshakeIcon, title: "Adhere", body: "To ethical norms in every dealing with employees, customers, suppliers, financial institutions and government." },
   { Icon: Award, title: "Provide Value", body: "Deliver real value to customers through consistent product quality and dependable services." },
-  { Icon: ShieldCheck, title: "Respect Our People", body: "Treat our team with respect — recognise initiative, innovation and creativity, and create opportunities to learn and grow." },
-  { Icon: Compass, title: "Open Communication", body: "Maintain a climate of trust, open communication and team spirit — operating with moderation and humility." },
-  { Icon: Leaf, title: "Protect The Environment", body: "Discharge our responsibility to society — preserve the environment and exceed statutory norms on pollution control and safety." },
+  { Icon: ShieldCheck, title: "Respect Our People", body: "Treat our team with respect, recognise initiative, innovation and creativity, and create opportunities to learn and grow." },
+  { Icon: Compass, title: "Open Communication", body: "Maintain a climate of trust, open communication and team spirit, operating with moderation and humility." },
+  { Icon: Leaf, title: "Protect The Environment", body: "Discharge our responsibility to society, preserve the environment and exceed statutory norms on pollution control and safety." },
   { Icon: Target, title: "Sustained Growth", body: "Grow in an accelerated yet disciplined manner through continuous organisational renewal." },
 ];
 
@@ -32,7 +32,7 @@ function AboutPage() {
         <div className="container-page py-16 md:py-24">
           <p className="text-xs uppercase tracking-[0.18em] text-accent-orange">About Kanchan International</p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl text-balance text-brand md:text-5xl">
-            Three decades of expertise in specialty chemicals — from Mumbai to manufacturers worldwide.
+            Five decades of expertise in specialty chemicals, from Mumbai to manufacturers worldwide.
           </h1>
           <p className="mt-5 max-w-2xl text-ink-soft md:text-lg">
             Kanchan International has been engaged in the specialty-chemical business for over three
@@ -52,7 +52,7 @@ function AboutPage() {
           <div className="mt-6 space-y-5 leading-relaxed text-ink-soft">
             <p>
               For more than thirty years we have built a strong presence in the Indian specialty-chemical
-              market — earning the goodwill of reputed pharmaceutical, nutraceutical, food and veterinary
+              market, earning the goodwill of reputed pharmaceutical, nutraceutical, food and veterinary
               customers. The engineering and process know-how for our entire product range has been
               developed in-house, and we extend the same expertise as consultancy to several partner
               manufacturers.
@@ -60,8 +60,8 @@ function AboutPage() {
             <p>
               Our factory operates a well-equipped quality-control laboratory staffed by trained chemists
               who carry out both process control and finished-product analysis. The product quality across
-              our entire portfolio aligns with international standards — pharmacopoeial, food-grade and
-              technical — and is shipped with complete documentation.
+              our entire portfolio aligns with international standards, pharmacopoeial, food-grade and
+              technical, and is shipped with complete documentation.
             </p>
             <p>
               The future may be unknown, but our commitment to placing technical and commercial
@@ -84,7 +84,7 @@ function AboutPage() {
           <div className="rounded-2xl border border-border bg-paper p-7 shadow-[var(--shadow-soft)]">
             <p className="text-xs uppercase tracking-[0.16em] text-accent-orange">Mission Statement</p>
             <p className="mt-2 leading-relaxed text-ink">
-              A promise of unmatched, international-grade quality, terms and customised services —
+              A promise of unmatched, international-grade quality, terms and customised services ,
               setting a benchmark for others to follow.
             </p>
           </div>
@@ -117,7 +117,7 @@ function AboutPage() {
             To be a leader in food and pharmaceutical ingredients.
           </h2>
           <p className="mt-4 text-ink-soft">
-            Our growth is anchored in four pillars — quality, efficiency, profitability and stakeholder
+            Our growth is anchored in four pillars, quality, efficiency, profitability and stakeholder
             satisfaction.
           </p>
         </div>
@@ -167,7 +167,7 @@ function AboutPage() {
             Let's discuss your sourcing requirement.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-paper/80">
-            Share your specifications, target volume and destination — our team will respond within
+            Share your specifications, target volume and destination, our team will respond within
             24 hours with pricing, documentation and lead-time confirmation.
           </p>
           <Link
