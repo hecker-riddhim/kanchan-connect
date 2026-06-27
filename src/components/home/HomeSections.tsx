@@ -224,7 +224,7 @@ export function HomeSections() {
             </div>
             <dl className="grid grid-cols-2 gap-5">
               {[
-                { k: "30+", v: "Years of experience" },
+                { k: "50+", v: "Years of experience" },
                 { k: "60+", v: "Products in catalogue" },
                 { k: "4", v: "Product categories" },
                 { k: "6", v: "Industries served" },
