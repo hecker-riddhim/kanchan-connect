@@ -28,7 +28,7 @@ const faqs = [
   { q: "What documentation do you provide with shipments?", a: "Every consignment ships with a Certificate of Analysis and, on request, Technical Data Sheets and additional regulatory support documents." },
   { q: "Which industries do you serve?", a: "Pharmaceutical and nutraceutical manufacturers, veterinary drug formulators, food and beverage processors, chemical distributors and research laboratories, across India and 30+ export destinations." },
   { q: "Do you supply internationally?", a: "Yes. We export to North America, Europe, the Middle East, Africa and the ASEAN region. We handle CHA coordination, multimodal logistics and complete export documentation including COO and CoA." },
-  { q: "Are your products GMP compliant?", a: "Our APIs and pharma intermediates are sourced from WHO-GMP and EU-GMP audited manufacturers. Food-grade chemicals comply with FCC, FSSAI and applicable kosher/halal standards." },
+  { q: "Are your products GMP compliant?", a: "Our APIs and pharma intermediates are sourced from GMP-audited manufacturers. Food-grade chemicals comply with FSSAI, HACCP and ISO 22000:2005, with Halal and Kosher documentation available where applicable." },
 ];
 
 export function HomeSections() {
@@ -134,9 +134,9 @@ export function HomeSections() {
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
             {[
-              { title: "GMP Aligned", body: "Sourced from WHO/EU-GMP audited manufacturers." },
-              { title: "ISO 9001:2015", body: "Quality management system across operations." },
-              { title: "Low Heavy Metals", body: "Validated impurity profiles per batch." },
+              { title: "ISO 9001:2008", body: "Certified quality management system across all operations." },
+              { title: "GMP & HACCP", body: "Good Manufacturing Practice with HACCP-based food safety controls." },
+              { title: "FSSAI, Halal & Kosher", body: "ISO 22000:2005 food safety, with Halal and Kosher documentation." },
             ].map((c) => (
               <div key={c.title} className="rounded-xl border border-border bg-paper p-6 text-center transition hover:-translate-y-0.5 hover:border-brand/30 hover:shadow-[var(--shadow-soft)]">
                 <span className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-brand-soft text-brand">

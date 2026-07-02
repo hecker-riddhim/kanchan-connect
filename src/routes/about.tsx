@@ -97,8 +97,8 @@ function AboutPage() {
           {[
             { Icon: Factory, n: "50+", l: "Years in specialty chemicals" },
             { Icon: Globe2, n: "Pan-India", l: "Distribution & export reach" },
-            { Icon: Award, n: "ISO 9001", l: "Quality management system" },
-            { Icon: ShieldCheck, n: "FSSAI", l: "Registered food-grade operations" },
+            { Icon: Award, n: "ISO 9001:2008", l: "Certified quality management system" },
+            { Icon: ShieldCheck, n: "FSSAI · HACCP", l: "Food-safety certified operations" },
           ].map(({ Icon, n, l }) => (
             <div key={l} className="border-l-2 border-accent-orange pl-5">
               <Icon className="h-6 w-6 text-accent-orange-soft" />

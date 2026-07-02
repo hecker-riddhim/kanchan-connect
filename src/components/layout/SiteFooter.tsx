@@ -83,7 +83,7 @@ export function SiteFooter() {
       <div className="border-t border-border">
         <div className="container-page flex flex-col gap-2 py-5 text-xs text-ink-soft md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Kanchan International. All rights reserved.</p>
-          <p>GMP-aligned sourcing · ISO 9001:2015 quality system</p>
+          <p>ISO 9001:2008 · GMP · HACCP · FSSAI · ISO 22000:2005 · Halal · Kosher · CRISIL Rated</p>
         </div>
       </div>
     </footer>
