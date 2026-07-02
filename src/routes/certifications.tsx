@@ -1,14 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { ShieldCheck, X, Award } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+
+import iso9001 from "@/assets/certs/iso9001.png.asset.json";
+import gmp from "@/assets/certs/gmp.png.asset.json";
+import crisil from "@/assets/certs/crisil.png.asset.json";
+import halal from "@/assets/certs/halal.png.asset.json";
+import haccp from "@/assets/certs/haccp.png.asset.json";
+import fssai from "@/assets/certs/fssai.png.asset.json";
+import iso22000 from "@/assets/certs/iso22000.png.asset.json";
+import kosher from "@/assets/certs/kosher.png.asset.json";
 
 export const Route = createFileRoute("/certifications")({
   component: CertificationsPage,
   head: () => ({
     meta: [
       { title: "Certifications & Compliance, Kanchan International" },
-      { name: "description", content: "GMP, ISO 9001:2015, FSSAI, REACH, explore the certifications and compliance standards behind Kanchan International's chemical supply." },
+      { name: "description", content: "ISO 9001:2008, GMP, HACCP, FSSAI, ISO 22000:2005, Halal, Kosher and CRISIL Rated, the certifications and compliance standards behind Kanchan International's chemical supply." },
       { property: "og:title", content: "Certifications & Compliance, Kanchan International" },
       { property: "og:description", content: "Quality and compliance standards for global B2B chemical supply." },
       { property: "og:url", content: "/certifications" },
@@ -17,15 +26,17 @@ export const Route = createFileRoute("/certifications")({
   }),
 });
 
-type Cert = { title: string; issuer: string; body: string };
+type Cert = { title: string; issuer: string; body: string; image: string };
 
 const certs: Cert[] = [
-  { title: "GMP Aligned Sourcing", issuer: "WHO / EU-GMP audited partners", body: "All APIs and pharmaceutical intermediates are sourced from manufacturers audited against current GMP standards." },
-  { title: "ISO 9001:2015", issuer: "Quality Management System", body: "Documented quality management across sourcing, storage, repacking and dispatch operations." },
-  { title: "Low Heavy Metals", issuer: "ICH Q3D / USP <232>", body: "Validated impurity profiles per batch, with elemental impurity data available where required." },
-  { title: "Halal & Kosher", issuer: "For food-grade lines", body: "Halal and Kosher certificates available for applicable food-grade chemical products." },
-  { title: "REACH Pre-registration", issuer: "European Chemicals Agency", body: "REACH pre-registration support for relevant intermediates and chemicals exported to the EU." },
-  { title: "FSSAI Registered", issuer: "Food Safety & Standards Authority", body: "Food-grade chemical operations registered under the Food Safety and Standards Authority of India." },
+  { title: "ISO 9001:2008", issuer: "Certified Company", body: "Certified quality management system across sourcing, storage, repacking and dispatch operations, ensuring consistent quality on every consignment.", image: iso9001.url },
+  { title: "GMP", issuer: "Good Manufacturing Practice", body: "All APIs and pharmaceutical intermediates are sourced from manufacturers audited against current Good Manufacturing Practice standards for consistent quality.", image: gmp.url },
+  { title: "HACCP", issuer: "Hazard Analysis Critical Control Point", body: "Food-grade operations follow HACCP principles, identifying and controlling critical points across the supply chain to ensure product safety.", image: haccp.url },
+  { title: "FSSAI Registered", issuer: "Food Safety & Standards Authority of India", body: "Food-grade chemical operations registered under the Food Safety and Standards Authority of India, with full traceability of every batch.", image: fssai.url },
+  { title: "ISO 22000:2005", issuer: "Certified Food Safety Management System", body: "Food safety management system covering handling, storage and dispatch of food-grade chemical ingredients, aligned with global food-safety norms.", image: iso22000.url },
+  { title: "Halal Certified", issuer: "Halal India", body: "Halal certification available for applicable food-grade product lines, supported by documentation for export markets.", image: halal.url },
+  { title: "Kosher Certified", issuer: "For food-grade product lines", body: "Kosher certificates available for applicable food-grade chemical products, ensuring acceptance across religious dietary standards.", image: kosher.url },
+  { title: "CRISIL Rated", issuer: "CRISIL Ratings", body: "Independently rated by CRISIL, reflecting financial stability and reliability as a long-standing supply partner for global buyers.", image: crisil.url },
 ];
 
 function CertificationsPage() {
@@ -55,9 +66,9 @@ function CertificationsPage() {
               onClick={() => setOpen(c)}
               className="group flex flex-col rounded-xl border border-border bg-paper p-8 text-left transition hover:-translate-y-1 hover:border-accent-orange/60 hover:shadow-[var(--shadow-lift)]"
             >
-              <span className="grid h-12 w-12 place-items-center rounded-full bg-brand-soft text-brand group-hover:bg-brand group-hover:text-paper transition-colors">
-                <Award className="h-5 w-5" />
-              </span>
+              <div className="grid h-24 w-full place-items-center rounded-lg bg-cream/60 p-3">
+                <img src={c.image} alt={`${c.title} certification logo`} className="max-h-20 w-auto object-contain" loading="lazy" />
+              </div>
               <h3 className="mt-5 font-display text-lg text-brand">{c.title}</h3>
               <p className="mt-1 text-xs uppercase tracking-wider text-accent-orange">{c.issuer}</p>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft line-clamp-3">{c.body}</p>
@@ -95,9 +106,9 @@ function CertificationsPage() {
           {open && (
             <div>
               <div className="flex items-start gap-4">
-                <span className="grid h-12 w-12 place-items-center rounded-full bg-brand-soft text-brand">
-                  <Award className="h-5 w-5" />
-                </span>
+                <div className="grid h-16 w-16 shrink-0 place-items-center rounded-lg bg-cream p-2">
+                  <img src={open.image} alt={`${open.title} certification logo`} className="max-h-14 w-auto object-contain" />
+                </div>
                 <div>
                   <h2 className="font-display text-2xl text-brand">{open.title}</h2>
                   <p className="mt-1 text-xs uppercase tracking-wider text-accent-orange">{open.issuer}</p>
