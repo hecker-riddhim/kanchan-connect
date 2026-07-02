@@ -57,7 +57,7 @@ function ContactPage() {
             <a href="mailto:info@kanchanin.com" className="hover:text-brand">info@kanchanin.com</a>
           </ContactCard>
           <ContactCard Icon={Clock} title="Hours">
-            Mon – Sat · 09:30 – 18:30 IST
+            Mon – Sat · 11:00 – 19:00 IST
           </ContactCard>
 
           <a
