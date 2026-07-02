@@ -301,7 +301,7 @@ export const productsByCategory = (name: Category) =>
 export const featuredProducts = () => products.filter((p) => p.featured);
 
 export const trustBadges = [
-  "ISO 9001:2015",
-  "FSSAI Registered",
-  "WHO-GMP Sourced",
+  "ISO 9001:2008",
+  "GMP · HACCP",
+  "FSSAI · ISO 22000:2005",
 ];
